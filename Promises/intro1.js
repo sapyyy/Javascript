@@ -75,3 +75,18 @@ async function fetchJokes() {
   }
 }
 fetchJokes();
+
+// using fetch without async, await
+const url = "https://official-joke-api.appspot.com/random_joke";
+fetch(url)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data.type);
+    console.log(data.setup);
+    console.log(data.punchLine);
+  })
+  .catch((error) => {
+    console.log("Error: ", error);
+  });
