@@ -1,4 +1,4 @@
-// when a function is called without a object reference where you a this keyword is used
+// when a function is called without an object reference where you a this keyword is used
 // the reference is lost
 
 const user = {
