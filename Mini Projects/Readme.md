@@ -8,8 +8,8 @@ Please check the links!
 
 | #   | Project Name       | Live Demo                                            |
 | --- | ------------------ | ---------------------------------------------------- |
-| 1   | **Form Validator** | [Live ▶](https://your-live-link-1.com)               |
-| 2   | **Basic Calcutor** | [Live ▶](https://form-validator-sapyyy.netlify.app/) |
+| 1   | **Form Validator** | [Live ▶](https://form-validator-sapyyy.netlify.app/) |
+| 2   | **Basic Calcutor** | [Live ▶](https://calculator-sapyyy.netlify.app/)     |
 
 ## ⚙️ Quick Setup
 
