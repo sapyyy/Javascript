@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  color: aliceblue;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red {
+  background-color: #ff6157;
+  transition: 0.2s ease;
+}
+.yellow {
+  background-color: #ff9f0a;
+  transition: 0.2s ease;
+}
+.green {
+  background-color: #28c93f;
+  transition: 0.2s ease;
+}
+
+.calculator {
+  background-color: #444648;
+  color: aliceblue;
+  width: 232px;
+  height: 300px;
+  border: 1px solid #444648;
+  border-radius: 8px;
+  box-shadow: 1px 1px 20px #18181874;
+  overflow: hidden;
+}
+
+.display {
+  max-width: 100%;
+  height: 70px;
+  position: relative;
+
+  white-space: nowrap; /* Prevents the text from wrapping to the next line.*/
+  overflow-x: auto; /*Adds horizontal scroll only when needed.*/
+}
+
+.circles {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  background-color: transparent;
+  width: 60px;
+  height: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.circles div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cursor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 6px;
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+  display: flex;
+  margin-bottom: 1px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.row1 div:nth-child(-n + 3) {
+  height: 46px;
+  width: 57.622px;
+  background-color: #565859;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row2 div:nth-child(-n + 3),
+.row3 div:nth-child(-n + 3),
+.row4 div:nth-child(-n + 3) {
+  height: 46px;
+  width: 57.622px;
+  background-color: #737373;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row1 div:nth-child(4),
+.row2 div:nth-child(4),
+.row3 div:nth-child(4),
+.row4 div:nth-child(4),
+.row5 div:nth-child(3) {
+  height: 46px;
+  width: 57.622px;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row5 div:nth-child(2) {
+  height: 46px;
+  width: 57.622px;
+  background-color: #737373;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.row5 div:nth-child(1) {
+  height: 46px;
+  width: 116.26px;
+  background-color: #737373;
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.row1 div,
+.row2 div,
+.row3 div,
+.row4 div,
+.row5 div {
+  cursor: pointer;
+}
